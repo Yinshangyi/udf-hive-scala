@@ -1,8 +1,8 @@
-package udfs
+package com.yinshangyi.udfs
 
 import org.apache.hadoop.hive.ql.exec.UDF
 
-object AreaFromSSN extends UDF {
+class AreaFromSSN extends UDF {
 
   /**
    * Return the Area code from the SSN code
