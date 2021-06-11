@@ -1,13 +1,25 @@
 package udfs
 
-import org.apache.hadoop.hive.ql.udf.generic.GenericUDF
-import org.apache.hadoop.hive.serde2.objectinspector.ObjectInspector
+import org.apache.hadoop.hive.ql.exec.UDF
 
-object AreaFromSSN extends GenericUDF {
+object AreaFromSSN extends UDF {
 
-  override def initialize(arguments: Array[ObjectInspector]): ObjectInspector = ???
+  /**
+   * Return the Area code from the SSN code
+   * @param str ssn code
+   * @return Area code
+   */
+  def evaluate(ssn: String): String = {
+    val ssnSplited = ssn.split("-")
 
-  override def evaluate(arguments: Array[GenericUDF.DeferredObject]): AnyRef = ???
+    if (ssnSplited.length != 3 || ssnSplited(0).length != 3)
+      return "Invalid SSN Code"
 
-  override def getDisplayString(children: Array[String]): String = ???
+    ssnSplited(0).toInt match {
+      case area if area < 100 => "Out of range"
+      case area if area > 100 && area < 200 => area.toString
+      case area if area > 200 => "Out of range"
+    }
+  }
+
 }
