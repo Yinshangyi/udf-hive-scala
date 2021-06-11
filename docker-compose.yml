@@ -61,6 +61,7 @@ services:
       - ./hive/data:/data
       - ./hive/scripts/bash/setup-data.sh:/scripts/setup-data.sh
       - ./hive/scripts/sql/create_table.sql:/scripts/create_table.sql
+      - ./target/scala-2.11/HiveUDFScala-assembly-0.1.jar:/jars/HiveUDFScala-assembly-0.1.jar
     #entrypoint: sh -c "/scripts/setup-data.sh"
     networks:
       spark_net:
