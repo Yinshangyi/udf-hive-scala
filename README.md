@@ -68,7 +68,7 @@ hive> ADD JAR /jars/HiveUDFScala-assembly-0.1.jar
 ```
 Once it's done we only need to register the Hive SQL function.
 ```bash
-CREATE FUNCTION area_from_ssn as 'com.yinshangyi.udfs.AreaFromSSN';
+hive> CREATE FUNCTION area_from_ssn as 'com.yinshangyi.udfs.AreaFromSSN';
 ```
 And that is it, you can now use the area_from_ssn from your Hive SQL code.
 ```sql
