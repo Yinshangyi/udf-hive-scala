@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="15e9fab0-385c-4127-976b-9a119023843a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/scala/udfs/AreaFromSSN.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/com/yinshangyi/udfs/AreaFromSSN.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/scala/udfs/AreaFromSSNTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/scala/com/yinshangyi/udfs/AreaFromSSNTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
