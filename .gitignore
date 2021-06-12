@@ -26,7 +26,8 @@ build/
 *.iml
 *.ipr
 *.iws
-udf/.idea
+.bsp
+.idea
 
 # mac
 .DS_Store
